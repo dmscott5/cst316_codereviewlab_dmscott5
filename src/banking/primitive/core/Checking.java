@@ -1,10 +1,6 @@
 package banking.primitive.core;
 
 public class Checking extends Account {
-
-	private static final long serialVersionUID = 11L;
-	private int numWithdraws = 0;
-	
 	private Checking(String name) {
 		super(name);
 	}
@@ -16,6 +12,11 @@ public class Checking extends Account {
 	public Checking(String name, float balance) {
 		super(name, balance);
 	}
+   
+   
+	private static final long serialVersionUID = 11L;
+	private int numWithdraws = 0;
+	
 
 	/**
 	 * A deposit may be made unless the Checking account is closed
